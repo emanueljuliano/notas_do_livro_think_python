@@ -1,0 +1,7 @@
+if abs(p1.x - circle.center.x) > circle.radius or abs(p1.x + rect.width - circle.center.x) > circle.radius:
+	return False
+
+if abs(p1.y - circle.center.y) > circle.radius or abs(p1.y + heigth - circle.center.y) > circle.radius:
+	return False
+
+just need do define the x and y of the rs, not the points, or create another function

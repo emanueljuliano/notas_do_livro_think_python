@@ -1,0 +1,10 @@
+import string
+finn = open('dilmes.txt')
+espacos = string.whitespace
+pontuacao = string.punctuation
+remover = espacos + pontuacao
+for line in finn:
+    frase = line.strip()
+    for item in remover:
+        frase = frase.replace(item, '')
+    print(frase.lower(), end='')
